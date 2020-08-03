@@ -2,7 +2,7 @@
   <div id="app">
     <nav>  
       <router-link v-bind:to="{name: 'home'}">Home</router-link>|
-      <router-link v-bind:to="{name: 'about'}">About Page</router-link>|
+      <router-link v-bind:to="{name: 'about'}">About Page</router-link>
     </nav>
     <router-view />
   </div>
@@ -21,7 +21,8 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  font-size: 2rem;
+  color: darkred;
   margin: 60px;
 }
 </style>
