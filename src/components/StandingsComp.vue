@@ -9,7 +9,7 @@
             </tr>
             <tr v-for="standing in $store.state.standings" v-bind:key="standing.year">
                 <th>{{standing.year}}</th>
-                <th>{{standing.precent}}</th>
+                <th>{{standing.percent}}</th>
                 <th>{{standing.rank}}</th>
             </tr>  
         </table>
@@ -25,6 +25,14 @@ export default {
 
 table {
     color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+tr {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 </style>

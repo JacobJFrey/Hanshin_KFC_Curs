@@ -3,6 +3,7 @@
     <nav>  
       <router-link v-bind:to="{name: 'Home'}">Home</router-link>
       <router-link v-bind:to="{name: 'Form'}">Form</router-link>
+      <!-- <router-link v-bind:to="{name: 'DragAndDrop'}">Test</router-link> -->
     </nav>
     <router-view />
   </div>
@@ -39,8 +40,10 @@ body {
 
 nav {
   background-color: black;
-  margin: 0px;
-  border: 3px solid #e7360c;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #e7360c;
   padding: 10px;
 
   display: flex;
@@ -53,7 +56,7 @@ a {
 
 h1 {
     color: #e7360c;
-    font-size: 5em;
+    font-size: 5rem;
     margin: 0px;
     font-weight: 500;
 }
@@ -66,14 +69,17 @@ h2 {
 }
 
 h3 {
-    font-weight: 500;
+    font-weight: 400;
     text-decoration: overline;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 0px;
 }
 
-img {
-  margin: 15px;
+h5 {
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin: 0px;
+    margin-top: 15px;
 }
 
 </style>

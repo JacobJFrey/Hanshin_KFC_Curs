@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="hanshin tiger logo" src="@/assets/HanshinTigersLogo.jpg">
+    <img class="badge" alt="hanshin tiger logo" src="@/assets/HanshinTigersLogo.jpg">
     <h1> THE CURSE OF THE COLONEL</h1>
         <h3> Kaneru Sandasu no Noroi</h3>
 
@@ -12,7 +12,7 @@
 
         <div id="fingerlickinggood">
         
-            <img src="https://cdn.glitch.com/61974d1d-2cef-4054-87ec-53d80a05b1a0%2Fcolonelsanders.webp?v=1594221817675" />
+            <img class="colonelDateApp" src="https://cdn.glitch.com/61974d1d-2cef-4054-87ec-53d80a05b1a0%2Fcolonelsanders.webp?v=1594221817675" />
             
         <figcaption class="caption">image from <a href="https://store.steampowered.com/app/1121910/I_Love_You_Colonel_Sanders_A_Finger_Lickin_Good_Dating_Simulator">I LOVE YOU, COLONEL SANDERS! A FINGER LICKIN' GOOD DATING SIMULATOR </a></figcaption>
         </div>
@@ -39,15 +39,15 @@
           <h2>Quotes</h2>
           <blockquote>
               The colonel will be kept in police custody for the time being, but Yokakawa said KFC is considering donating him to the home stadium of the Tigers in Osaka.
-            <a href="http://www.nbcnews.com/id/29629104/ns/world_news-weird_news/t/colonel-sanders-pulled-river-after-years/#.XwNudJNKhle">NBC News.com</a>
+            <br><a href="http://www.nbcnews.com/id/29629104/ns/world_news-weird_news/t/colonel-sanders-pulled-river-after-years/#.XwNudJNKhle">NBC News.com</a>
             </blockquote>
           <blockquote>
             The "Curse of the Colonel" has also been used as a bogeyman threat to those who would divulge the secret recipe of eleven herbs and spices that result in the unique taste of his chicken.
-            <a href="https://en.wikipedia.org/wiki/Curse_of_the_Colonel">wikipedia: Curse of the Colonel</a>
+            <br><a href="https://en.wikipedia.org/wiki/Curse_of_the_Colonel">wikipedia: Curse of the Colonel</a>
           </blockquote>
           <blockquote>
-            "He was apparently found standing upright, which is fitting, because although he was a nice man he could also be very strict and demanding," ~ KFC Spokeswoman Sumeo Yokakawa upon recovery of Colonel Sanders statue.
-            <a href="https://www.dispatch.com/article/20090311/NEWS/303119481">The Columbus Dispatch</a>
+            "He was apparently found standing upright, which is fitting, because although he was a nice man he could also be very strict and demanding," <br> ~ KFC Spokeswoman Sumeo Yokakawa upon recovery of Colonel Sanders statue.
+            <br><a href="https://www.dispatch.com/article/20090311/NEWS/303119481">The Columbus Dispatch</a>
           </blockquote>
         </div>  
 
@@ -97,10 +97,45 @@ p {
   width: 80%;
   margin-left: 10%;
   text-align: justify;
+  font-size: 1.5rem;
+}
+
+blockquote {
+    font-style: italic;
+    text-align: justify;
+    color: black;
 }
 
 a {
   text-decoration: none;
+  text-align: center;
+  color: #e7360c;
+}
+
+.badge {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  box-shadow: 2px 2px 4px black;
+  margin: 10px 0px 20px 0px;
+}
+
+#fingerlickinggood {
+  border: 4px solid #222;
+  background-color: #222;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.colonelDateApp {
+  width: 100%;
+  height: auto;
+}
+
+#fingerlickinggood > figcaption > a {
+  text-decoration: none;
+  color: white;
 }
 
 </style>
