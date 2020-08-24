@@ -5,14 +5,13 @@ import Form from '@/views/Form.vue'
 
 Vue.use(VueRouter)
 
-  const routes = [
-  { path: '/', name: 'Home', component: Home },
-  { path: '/Form', name: 'Form', component: Form }
-]
-
 const router = new VueRouter({
   mode: 'history',
-  routes
+  base: process.env.BASE_URL,
+  routes: [
+  { path: '/', name: 'Home', component: Home },
+  { path: '/Form', name: 'Form', component: Form }
+  ],
 })
 
 export default router

@@ -1,14 +1,13 @@
 <template>
   <div class="home">
     <img alt="hanshin tiger logo" src="@/assets/HanshinTigersLogo.jpg">
-
     <h1> THE CURSE OF THE COLONEL</h1>
         <h3> Kaneru Sandasu no Noroi</h3>
 
         <p>
             One affectation Japanese have with Western Culture is KFC Chicken. 
             Every Christmas, an estimated 3.6 million Japanese families enjoy KFC chicken in what has become a nationwide tradition.
-            So, it is not surprising there would be at least one urban legend surrounding KFC and , Colonel Sanders.
+            So, it is not surprising there would be at least one urban legend surrounding KFC and Colonel Sanders.
         </p>
 
         <div id="fingerlickinggood">
@@ -23,7 +22,7 @@
         <table>
             <h2>Timeline of Pertinent Events</h2>
             <ul class="timeline">
-            <li>In the 1985 Japan Championship Series, the underdog Hanshin Tigers of Kansai beat the Yomiuri Giants of Tokyo, widely considered the Kings of Japanese Baseball.</li>
+            <li>In the 1985 Japan Championship Series, underdog Hanshin Tigers of Kansai beat the Yomiuri Giants of Tokyo, widely considered the Kings of Japanese Baseball.</li>
             <li>Hanshin fans erupted in celebration at Ebisu Bridge in Osaka. As a salute to the team, a fan resembling every member
             jumped from the bridge when a player's name was shouted out.</li>
             <li>Randy Bass, an American who later became an Oklahoma State Senator and MVP of the game, did not have a fan that resembled him.</li>
@@ -38,9 +37,9 @@
 
         <div>
           <h2>Quotes</h2>
-            <blockquote>
+          <blockquote>
               The colonel will be kept in police custody for the time being, but Yokakawa said KFC is considering donating him to the home stadium of the Tigers in Osaka.
-              <a href="http://www.nbcnews.com/id/29629104/ns/world_news-weird_news/t/colonel-sanders-pulled-river-after-years/#.XwNudJNKhle">NBC News.com</a>
+            <a href="http://www.nbcnews.com/id/29629104/ns/world_news-weird_news/t/colonel-sanders-pulled-river-after-years/#.XwNudJNKhle">NBC News.com</a>
             </blockquote>
           <blockquote>
             The "Curse of the Colonel" has also been used as a bogeyman threat to those who would divulge the secret recipe of eleven herbs and spices that result in the unique taste of his chicken.
@@ -48,12 +47,14 @@
           </blockquote>
           <blockquote>
             "He was apparently found standing upright, which is fitting, because although he was a nice man he could also be very strict and demanding," ~ KFC Spokeswoman Sumeo Yokakawa upon recovery of Colonel Sanders statue.
-            <a href="https://www.dispatch.com/article/20090311/NEWS/303119481">The Columbus Dispatch</a></blockquote>
+            <a href="https://www.dispatch.com/article/20090311/NEWS/303119481">The Columbus Dispatch</a>
+          </blockquote>
         </div>  
 
         <hr>
 
-    <StandingsComp />
+<standings-comp />
+
   </div>
 </template>
 
@@ -70,7 +71,7 @@ export default {
 
 <style>
 .timeline {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: left;
@@ -82,4 +83,24 @@ export default {
 .caption {
   font-size: 1rem;
 }
+
+#home {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin: 15px;
+}
+
+p {
+  width: 80%;
+  margin-left: 10%;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+}
+
 </style>
